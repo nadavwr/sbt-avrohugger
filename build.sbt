@@ -12,7 +12,7 @@ enablePlugins(SbtPlugin)
 
 (outputStrategy in run) := Some(StdoutOutput)
 
-scalaVersion := appConfiguration.value.provider.scalaProvider.version
+scalaVersion := "2.12.11"
 crossSbtVersions := Seq(sbtVersion.value)
 scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature", "-Ywarn-value-discard")
 
